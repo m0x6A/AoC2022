@@ -1,0 +1,5 @@
+{
+    "preset": "ts-jest",
+    "bail": 1,
+    "verbose": true
+  }
