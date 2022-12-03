@@ -1,0 +1,4 @@
+build/**/*
+**/*.scss
+serviceWorker.ts
+.eslintrc.js
