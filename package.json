@@ -21,7 +21,7 @@
   "scripts": {
     "start:dev": "npx nodemon",
     "lint": "eslint . --ext .ts",
-    "test": "jest --coverage",
+    "test": "jest",
     "test:watch": "jest --watch"
   },
   "devDependencies": {

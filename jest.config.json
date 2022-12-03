@@ -1,5 +1,16 @@
 {
-    "preset": "ts-jest",
-    "bail": 1,
-    "verbose": true
-  }
+  "preset": "ts-jest",
+  "collectCoverage": true,
+  "coverageDirectory": "coverage",
+  "coverageProvider": "v8",
+  "roots": [
+    "<rootDir>"
+  ],
+  "testMatch": [
+    "**/__tests__/**/*.[jt]s?(x)",
+    "**/?(*.)+(spec|test).[tj]s?(x)"
+  ],
+  "testPathIgnorePatterns": [
+    "\\\\node_modules\\\\"
+  ]
+}
