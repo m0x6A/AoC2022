@@ -1,9 +1,6 @@
-import { getTopThree, importData, mostCalories, sortElves } from "./day1";
-import { actualData } from "./day1.data";
+import { aggregateScore, importBackpacks } from "day3/day3";
+import { day3RawData } from "day3/day3.data";
 
-const data = importData(actualData);
-
-const value = mostCalories(data);
-
-const value2 = getTopThree(sortElves(data));
-console.log(value2);
+const day3data = importBackpacks(day3RawData);
+const day3score = aggregateScore(day3data);
+console.log(`Day 3 Part 1: ${day3score}`);
