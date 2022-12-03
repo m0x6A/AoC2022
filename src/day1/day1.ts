@@ -7,11 +7,15 @@ export function sortElves(elves:elf[]):elf[] {
 }
 export function getTopThree(elves:elf[]):number {
     const local = sortElves(elves);   
-    return (local[0].items.reduce((x, y) => x+ y) + local[1].items.reduce((x, y) => x+ y) + local[3].items.reduce((x, y) => x+ y));
+    return (local[0].items.reduce((x, y) => x+ y) + local[1].items.reduce((x, y) => x+ y) + local[2].items.reduce((x, y) => x+ y));
 }
 export function importData(data:string):elf[] {
     const lines = data.split('\n\n');
-    const elfs = [] as elf[];
+    const elfs = 
+    
+    
+    
+    [] as elf[]; 
 
     lines.forEach(element => {        
         const items = element.split('\n').map(x => +x);
