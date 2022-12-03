@@ -1,4 +1,4 @@
-import { getTopThree, importData, mostCalories } from "./day1";
+import { getTopThree, importElves, mostCalories } from "./day1";
 
 const data = `1000
 2000
@@ -45,7 +45,7 @@ describe('Elf 4 should be highest', () => {
 })
 describe('it should import data', () => {
     it("should have correct data", () => {
-        const arrays = importData(data);
+        const arrays = importElves(data);
         expect(arrays.sort((a,b)=> a.calories - b.calories)).toStrictEqual(testElves.sort((a,b)=> a.calories - b.calories));
     });
 

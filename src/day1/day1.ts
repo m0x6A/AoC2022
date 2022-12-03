@@ -1,3 +1,7 @@
+export type elf = {
+    calories: number;
+    items: number[];
+}
 export function mostCalories(elves:elf[]):number {
     return sortElves(elves)[0].calories;
 }
@@ -9,7 +13,7 @@ export function getTopThree(elves:elf[]):number {
     const local = sortElves(elves);   
     return (local[0].items.reduce((x, y) => x+ y) + local[1].items.reduce((x, y) => x+ y) + local[2].items.reduce((x, y) => x+ y));
 }
-export function importData(data:string):elf[] {
+export function importElves(data:string):elf[] {
     const lines = data.split('\n\n');
     const elfs = 
     
@@ -27,7 +31,4 @@ export function importData(data:string):elf[] {
     return elfs;
 }
 
-export type elf = {
-    calories: number;
-    items: number[];
-}
+

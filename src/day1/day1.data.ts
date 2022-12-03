@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-sparse-arrays
-export const actualData = `
+export const day1RawData = `
 5474
 4920
 5381
