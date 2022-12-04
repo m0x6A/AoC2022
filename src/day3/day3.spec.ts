@@ -1,5 +1,4 @@
-import { aggregateBadgesScore, aggregateScore, findBadges, findDuplicateItems, GroupedItem, importBackpacks, importItemsInChunks, mapCharactersToPoints, Rucksack } from './day3';
-import { day3RawData } from './day3.data';
+import { aggregateBadgesScore, aggregateScore, findBadges, findDuplicateItems, GroupedItem, importBackpacks, mapCharactersToPoints, Rucksack } from './day3';
 
 const expectedData = `vJrwpWtwJgWrhcsFMMfFFhFp
 jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
@@ -98,17 +97,3 @@ describe('Aggegate score', () => {
     })
    
 });
-
-describe('Solve the puzzle', () => {
-    it('should solve the first part of the puzze', () => {
-        const day3data = importBackpacks(day3RawData);
-        const result = aggregateScore(day3data);
-        console.log(`Part 1: ${result}`)
-    });
-
-    it('should solve the second part of the puzzle', () => {
-        const data = importItemsInChunks(day3RawData);
-        const result = aggregateBadgesScore(data);        
-        console.log(`Part 2 ${result}`);
-      })
-})
