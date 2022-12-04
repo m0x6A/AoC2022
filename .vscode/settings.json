@@ -1,5 +1,4 @@
 {
     "jest.jestCommandLine": "yarn run test:watch",
     "typescript.preferences.importModuleSpecifier": "project-relative"
-
 }

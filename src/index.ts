@@ -4,6 +4,8 @@ import { aggregateResult, calculateHand, calculateResult, importMatches } from "
 import { day2RawData } from "./day2/day2.data";
 import { aggregateBadgesScore, aggregateScore, importBackpacks, importItemsInChunks } from "./day3/day3";
 import { day3RawData } from "./day3/day3.data";
+import { findDuplicatePatterns, findDuplicateSections, importTeams } from "./day4/day4";
+import { day4RawData } from "./day4/day4.data";
 
 
 function printResult(day:number, part: number, result:number) {
@@ -34,3 +36,14 @@ printResult(3,1, day3part1);
 const day3ChunckedRucksacks = importItemsInChunks(day3RawData);
 const day3part2 = aggregateBadgesScore(day3ChunckedRucksacks);
 printResult(3, 2, day3part2)
+
+/* ------------------ DAY 4 --------------------- */
+
+const day4Teams = importTeams(day4RawData);
+const day4part1 = findDuplicateSections(day4Teams);
+
+printResult(4,1,day4part1);
+
+const day4part2 = findDuplicatePatterns(day4Teams);
+
+printResult(4,1,day4part2);
