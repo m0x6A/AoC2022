@@ -16,9 +16,6 @@ export function getTopThree(elves:elf[]):number {
 export function importElves(data:string):elf[] {
     const lines = data.split('\n\n');
     const elfs = 
-    
-    
-    
     [] as elf[]; 
 
     lines.forEach(element => {        
