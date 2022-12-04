@@ -34,14 +34,10 @@ module.exports = {
     'eslint:recommended',
     'prettier',
   ],
-  // overrides: [
-  //   {
-  //     files: ['*.ts', '*.tsx'], // Your TypeScript files extension
-  //   },
-  // ],
   rules: {
     'no-use-before-define': 'off',
     'no-unused-vars': 'off',
+    'no-fallthrough': 'off', 
     '@typescript-eslint/no-unused-vars': 'error',
 
     'no-shadow': 'off',

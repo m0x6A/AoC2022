@@ -1,31 +1,38 @@
 {
-  "compilerOptions": {
-    "baseUrl": "src",
-    "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": [
+            "es6"
+        ],
+        "allowJs": true,
+        "outDir": "build/",
+         "rootDir": "src",
+        // "sourceRoot": "./src",
+        "strict": true,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": "src", // Here... try with correct values and the issue should get fixed
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]      
+        }
+    },
+    "include": [
+        "src/**/*.ts"
     ],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "noFallthroughCasesInSwitch": true,
-    "sourceMap": true
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-  ]
+    "exclude": [
+        "node_modules",
+        ".vscode"
+    ]
+    
 }
