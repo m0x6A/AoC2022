@@ -24,6 +24,8 @@ import {
 import { day4RawData } from './day4/day4.data';
 import { importStacks, moveCrates, moveCratesInBatches } from './day5/day5';
 import { day5Rawdata } from './day5/day5.data';
+import { findPacket } from './day6/day6';
+import { day6rawdata } from './day6/day6.data';
 
 function printResult(day: number, part: number, result: number | string) {
   return console.log(`Day ${day}, part ${part}: ${result}`);
@@ -73,3 +75,10 @@ printResult(5, 1, day5part1);
 const day5process2 = importStacks(day5Rawdata);
 const day5part2 = moveCratesInBatches(day5process2);
 printResult(5, 2, day5part2);
+
+/* ------------------ DAY 6 --------------------- */
+
+const day6part1 = findPacket(day6rawdata, 4);
+printResult(6, 1, day6part1);
+const day6part2 = findPacket(day6rawdata, 14);
+printResult(6, 2, day6part2);
