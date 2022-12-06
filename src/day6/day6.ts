@@ -6,3 +6,4 @@ export function findPacket(stream: string, distinct:number): number {
       ? index + distinct : 0;
   }).find((x) => x > 0) ?? 0;
 }
+
